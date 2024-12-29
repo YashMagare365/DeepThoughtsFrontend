@@ -14,6 +14,7 @@ function DownButtons() {
           padding: 10,
           justifyContent: "center",
           alignContent: "center",
+          cursor: "pointer",
         }}
       />
       <img src={meeting} alt="img" style={{ padding: 10 }} />
