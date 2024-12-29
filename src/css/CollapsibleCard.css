@@ -1,0 +1,148 @@
+.collapsible-card {
+  position: absolute;
+  top: 5%; /* Adjust for vertical alignment */
+  left: -20%; /* Hidden position when collapsed */
+  height: 50vh;
+  width: 27%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 0px black;
+  background-color: white;
+  border: 1px solid #c7c9cb;
+  z-index: 10;
+  transition: left 0.5s ease; /* Smooth transition */
+  overflow: hidden;
+}
+
+.collapsible-card.expanded {
+  left: 0; /* Fully visible position */
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black; /* Ensure contrast with text */
+  color: white; /* Ensure text is visible */
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-heading {
+  margin: 0;
+  font-size: 16px;
+  color: white; /* Make heading text visible */
+  flex-grow: 1;
+  text-align: center;
+}
+
+.arrow-icon {
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  color: black;
+}
+
+.card-content {
+  padding: 10px;
+  color: black;
+  font-size: 14px;
+}
+
+.collapsed-card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  margin-top: 5%;
+  margin-right: 3%;
+  width: 20%;
+  height: 15%;
+  border: 2px solid #0029ff;
+  color: #0029ff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.collapsed-content {
+  font-size: 18px; /* Adjust font size if needed */
+  margin: 0;
+}
+
+.li-item {
+  text-align: left;
+  align-items: center;
+}
+
+.ul-list {
+  margin-left: 5%;
+  /* font-size: 70%; */
+}
+.colapsible-card-heading {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .collapsible-card {
+    position: absolute;
+    top: 10%; /* Adjust for vertical alignment */
+    left: -10%; /* Hidden position when collapsed */
+    height: 50vh;
+    width: 25%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 0px black;
+    background-color: white;
+    border: 1px solid #c7c9cb;
+    z-index: 10;
+    transition: left 0.5s ease; /* Smooth transition */
+    overflow: hidden;
+  }
+
+  /* .colapsible-card-heading {
+    font-size: 0.5rem !important;
+  } */
+  .card-heading {
+    margin: 0;
+    font-size: 0.5rem;
+    color: white; /* Make heading text visible */
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .arrow-icon {
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 0.5rem;
+    color: black;
+  }
+  .li-item {
+    font-size: 70%;
+  }
+  .ul-list {
+    margin-left: 5%;
+    font-size: 70%;
+  }
+
+  .collapsed-content {
+    font-size: 0.5rem; /* Adjust font size if needed */
+    margin: 0;
+  }
+
+  .collapsed-card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    margin-top: 5%;
+    margin-right: 3%;
+    width: 50%;
+    height: 15%;
+    border: 2px solid #0029ff;
+    color: #0029ff;
+    border-radius: 10px;
+    text-align: center;
+  }
+}

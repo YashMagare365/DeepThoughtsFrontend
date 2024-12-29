@@ -1,30 +1,17 @@
 import "./App.css";
-import axios from "axios";
-import { useEffect, useState } from "react";
-// import data from "./assets/data.json";
+// import axios from "axios";
+// import { useEffect, useState } from "react";
+import data from "./assets/data.json";
+import Header from "./Components/Header";
+import Page1 from "./Components/Page1";
 
 function App() {
-  // const [data, setdata] = useState({});
-  // console.log("Data==>", data);
-
-  useEffect(() => {
-    const getJson = () => {
-      axios
-        .get(
-          "https://dev.deepthought.education/assets/uploads/files/files/others/ddugky_project.json"
-        )
-        .then((response) => {
-          console.log("DATA==>", response);
-        });
-    };
-    getJson();
-  }, []);
+  // console.log("Data==>", data.tasks);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <div>abcd</div>
-      </header>
+    <div>
+      <Header />
+      <Page1 />
     </div>
   );
 }

@@ -1,0 +1,41 @@
+.collapse-container {
+  width: 90%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.collapse-panel {
+  border-bottom: 1px solid #ddd;
+}
+
+.collapse-panel:last-child {
+  border-bottom: none;
+}
+
+.panel-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #f6f6f6;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.panel-header:hover {
+  background-color: #e6e6e6;
+}
+
+.toggle-icon {
+  font-size: 16px;
+  color: #333;
+}
+
+.panel-content {
+  padding: 10px 15px;
+  background-color: white;
+  color: #333;
+}
